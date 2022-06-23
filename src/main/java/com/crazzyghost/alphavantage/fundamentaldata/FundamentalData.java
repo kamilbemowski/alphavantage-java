@@ -199,6 +199,10 @@ public final class FundamentalData implements Fetcher {
         }
     }
 
+    private void parseEarningsCalendarResponse(String data) {
+
+    }
+
     @SuppressWarnings("unchecked")
     public abstract class RequestProxy<Proxy extends RequestProxy<?, ProxyResponse>, ProxyResponse> {
         protected FundamentalDataRequest.Builder<?> builder;

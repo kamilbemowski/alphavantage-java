@@ -85,5 +85,7 @@ public enum Function {
     BALANCE_SHEET,
     CASH_FLOW,
     EARNINGS,
+
+    NEWS_SENTIMENT,
     LISTING_STATUS
 }

@@ -27,6 +27,7 @@ import com.crazzyghost.alphavantage.exchangerate.ExchangeRate;
 import com.crazzyghost.alphavantage.forex.Forex;
 import com.crazzyghost.alphavantage.fundamentaldata.FundamentalData;
 import com.crazzyghost.alphavantage.indicator.Indicator;
+import com.crazzyghost.alphavantage.inteligence.AlphaIntelligence;
 import com.crazzyghost.alphavantage.sector.Sector;
 import com.crazzyghost.alphavantage.timeseries.TimeSeries;
 
@@ -125,6 +126,15 @@ public class AlphaVantage {
      */
     public FundamentalData fundamentalData(){
         return new FundamentalData(config);
+    }
+
+    /**
+     * Access to Advanced Intelligence.
+     *
+     * @return A {@link AlphaIntelligence} instance for access to advanced market intelligence
+     */
+    public AlphaIntelligence alphaIntelligence(){
+        return new AlphaIntelligence(config);
     }
 
 }
